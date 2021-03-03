@@ -1,7 +1,11 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+
 body{
     margin: 0;
     padding: 0;
-    background-color: #eee;
+    background-color: rgb(255, 255, 255);
     overflow-x: hidden;
     height: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -12,7 +16,6 @@ body{
 nav{
     height: 67px;
     width: 100%;
-    padding-bottom: 0.1%;
     position: fixed;
     color: white;
 }
@@ -23,30 +26,53 @@ nav{
     background: linear-gradient(90deg, rgba(217,23,23,1) 0%, rgba(172,16,213,1) 58%, rgba(16,199,213,1) 95%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d91717",endColorstr="#10c7d5",GradientType=1); 
 }
-nav span.nav_links{
-    padding-top: 1.5%;
+nav span.nav_logo{
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 400;
+    font-size: 30px;
+}
+nav span{
    float: right;
-   margin-right: 5%;
+   margin-left: 30px;
 }
 nav span{
     float: left;
     margin-left: 5%;
-    padding-top: 1.7%;
+    padding-top: 0%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 200;
     font-style: normal;
     text-decoration: none;
+
 }
-nav a{
-    padding-right: 10px;
+nav ul{
+    display: inline-block;
+    float: right;
+    margin-right: 2%;
+}
+
+nav ul li{
+    list-style-type: none;
+    border: px yellow solid; 
+    text-align: center;
+   display: inline-block;  
+}
+
+nav ul li a:hover{
+    color: rgb(255, 153, 0);
+}
+nav ul li a{
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     font-weight: 400;
     font-style: normal;
-    text-decoration: none;
     color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
+
 /**************** Nav End ***************/
 
 main{
@@ -55,12 +81,36 @@ main{
 
 /**************** Header start ***************/
 header{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-family:  'Kaushan Script', cursive;
+    font-size: 30px;
     font-weight: 700;
     font-variant: normal;
+    margin-top: 10%;
 }
 /**************** Header End ***************/
+
+/**************** Who we are start ***************/
+main div.abt{
+    float: left;
+    color: white;
+    background-color: #301934;
+    border: #ff3300;
+    border-style: solid;
+    border-width: 1px;
+    width: 40%;
+    height: 400px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    position: relative;
+}
+main div span.abt_cont{
+    border: rgb(0, 255, 0) 1px groove;
+    width: 20%;
+    position: absolute; 
+    margin-top: 40px;
+}
+/**************** Who we are end ***************/
 
 /**************** Banner start ***************/
 .banner{
@@ -99,7 +149,7 @@ span.overflowing_images{
     width: 600px;
     height: auto;
     float: right;
-    background-color: ;
+    background-color: transparent;
 }
 span img
 {
