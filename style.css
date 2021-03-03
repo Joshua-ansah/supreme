@@ -3,29 +3,25 @@ body{
     padding: 0;
     background-color: #eee;
     overflow-x: hidden;
+    height: 100%;
     font-family: Georgia, 'Times New Roman', Times, serif;
 } 
 
-/* nav{
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
-    border-bottom-color: rgb(0, 255, 136);
-    padding: 10px;
-    margin-bottom: 0px;
-    background-color: rgb(156, 151, 151);
-    font-family: Verdana;
-    font-weight: bolder;
-    font-size: large;
-    font-style:normal;
-    color: #000;  
-    height: 50px;
-    position: ;
-} */
+/**************** Nav start ***************/
+
 nav{
     height: 67px;
     width: 100%;
-    background-color: rgb(55, 0, 255);
     padding-bottom: 0.1%;
+    position: fixed;
+    color: white;
+}
+nav{
+    background: rgb(217,23,23);
+    background: -moz-linear-gradient(90deg, rgba(217,23,23,1) 0%, rgba(172,16,213,1) 58%, rgba(16,199,213,1) 95%);
+    background: -webkit-linear-gradient(90deg, rgba(217,23,23,1) 0%, rgba(172,16,213,1) 58%, rgba(16,199,213,1) 95%);
+    background: linear-gradient(90deg, rgba(217,23,23,1) 0%, rgba(172,16,213,1) 58%, rgba(16,199,213,1) 95%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d91717",endColorstr="#10c7d5",GradientType=1); 
 }
 nav span.nav_links{
     padding-top: 1.5%;
@@ -49,19 +45,102 @@ nav a{
     font-weight: 400;
     font-style: normal;
     text-decoration: none;
-    color: #000;
+    color: rgb(255, 255, 255);
 }
+/**************** Nav End ***************/
 
 main{
     text-align: center;
 }
 
+/**************** Header start ***************/
 header{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
     font-weight: 700;
     font-variant: normal;
 }
+/**************** Header End ***************/
+
+/**************** Banner start ***************/
+.banner{
+    background: rgb(217,23,23);
+    background: -moz-linear-gradient(90deg, rgba(217,23,23,1) 0%, rgba(172,16,213,1) 58%, rgba(16,199,213,1) 95%);
+    background: -webkit-linear-gradient(90deg, rgba(217,23,23,1) 0%, rgba(172,16,213,1) 58%, rgba(16,199,213,1) 95%);
+    background: linear-gradient(90deg, rgba(217,23,23,1) 0%, rgba(172,16,213,1) 58%, rgba(16,199,213,1) 95%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d91717",endColorstr="#10c7d5",GradientType=1); 
+}
+.banner{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    z-index: -1;
+}
+.ban_over_text{
+    position: absolute;
+    border: 2px solid none ;
+    width: 40%;
+    height: auto;
+    color: white;
+    display: inline-block;
+    margin-top: 80px;
+    left: 65px;
+    text-align: justify;
+    /* word-break: break-all;
+    word-wrap: break-word; */
+}
+
+/**************** Banner End ***************/
+
+/**************** Span Start ***************/
+span.overflowing_images{
+    margin-top: 15%;
+    position: relative;
+    width: 600px;
+    height: auto;
+    float: right;
+    background-color: ;
+}
+span img
+{
+    width: 30%;
+    height: auto;
+}
+span img.image_1{
+    position: absolute;
+    filter: drop-shadow(30px 30px 9px rgba(0, 0, 0, 0.4));
+    top: 0px;
+    left: 50px;
+    right: 0;
+    overflow: visible;
+}
+span img.image_2{
+    position: absolute;
+    filter: drop-shadow(30px 30px 9px rgba(0, 0, 0, 0.412));
+    top: 37px;
+    left: 215px;
+    right: 0;
+    overflow: visible;
+}
+span img.image_3{
+    position: absolute;
+    filter: drop-shadow(30px 30px 9px rgba(0, 0, 0, 0.412));
+    top: 165px;
+    left: 50px;
+    right: 0;
+    overflow: visible;
+    z-index: 0;
+}
+span img.image_4{
+    position: absolute;
+    filter: drop-shadow(30px 30px 9px rgba(0, 0, 0, 0.412));
+    top: 200px;
+    left: 200px;
+    right: 0;
+    overflow: visible;
+}
+/**************** Span End ***************/
+
 .categories{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
@@ -83,3 +162,22 @@ main div span span{
 main div span span{
     background-color: #fff;
 }
+
+footer{
+    margin-top: 1000px;
+    border: 1px solid gray;
+    position:relative;
+    width: 100%;
+    height: 300px;
+}
+
+/**************** Footer start ***************/
+footer{
+    background: rgb(217,23,23);
+    background: -moz-linear-gradient(90deg, rgba(217,23,23,1) 0%, rgba(172,16,213,1) 58%, rgba(16,199,213,1) 95%);
+    background: -webkit-linear-gradient(90deg, rgba(217,23,23,1) 0%, rgba(172,16,213,1) 58%, rgba(16,199,213,1) 95%);
+    background: linear-gradient(90deg, rgba(217,23,23,1) 0%, rgba(172,16,213,1) 58%, rgba(16,199,213,1) 95%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d91717",endColorstr="#10c7d5",GradientType=1); 
+}
+
+/**************** Footer End ***************/
